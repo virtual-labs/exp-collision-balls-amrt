@@ -2,36 +2,38 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "A very heavy object moving with velocity v collides head-on with a very light object moving with velocity -v. The collision is elastic, and there is no friction. The heavy object barely slows down. What is the speed of the light object after the collision?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "nearly v",
+        "b": "nearly 3v",
+        "c": "nearly infinite",
+        "d": "nearly 2v"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+    
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Two cars collide in a completely inelastic collision at a North-South East-West intersection. The skid marks point roughly northwest. Concerning the initial directions of the two cars, this tells you that one driver was traveling:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "West: the other driver was travelling the south",
+        "b": "East:the other driver was travelling the south",
+        "c": "West: the other driver was travelling the north",
+        "d": "East:the other driver was travelling the north"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "A rubber ball with a speed of 5.0 m/s collides head-on elastically with an identical ball at rest. What is the speed of the initially stopped ball after the collision?",
+      "answers": {
+        "a": "1.0 m/s",
+        "b": "2.5 m/s",
+        "c": "5.0 m/s",
+        "d": "zero"
       },
+      
       "correctAnswer": "c",
       "difficulty": "beginner"
     }
