@@ -56,6 +56,24 @@ $$v_{y,1'}=v_{y,1}-a.\frac{m_{2}}{m_{1}}\Delta v_{x,2'}...............(13)$$
 
 The 'impact angle' $\alpha$ in Eq.(9) can be determined from the collision geometry as shown in the illustration below:
 
+<div style="float: right; margin-left: 20px;"> <img src="./images/figure1.jpg" alt="Figure 1" style="max-width: 300px; height: auto;"> <p style="text-align: center; font-size: smaller; font-style: italic;"></p> </div>
 
+Geometry of 2D collision
+
+If the coordinates of the balls (with radius r1 and r2) are x1,y1 and x2,y2,$\alpha$ is given by
+
+$$\alpha=\arcsin\left[ \frac{d.\sin(Y_{x,y}-Y_{v})}{(r1+r2)}\right]................(14)$$
+
+Where
+
+$$d=\sqrt{(x2-x1)^{2}+(y2-y1)^{2}}.............(15)$$
+
+$$Y_{x,y}=\arcsin\left[ \frac{(y2-y1)}{(x2-x1)} \right].................(16)$$
+
+
+This will give a value for $\alpha$ as long as the absolute value of $d.sin (Y_{x,y}-Y_{v})\le (r1+r2)$ (otherwise the arcsin- function above is not defined, in which case the balls would not collide anyway). Note that one also has to exclude the case where $Y_{x,y}$ and $Y_{v}$ differ by more then $\pi/2$ and less than $1.5*\pi$ as then the balls would move away from each other. If one is tracking the balls for further collisions, it is also necessary to update the coordinates in addition to the velocities. This is achieved as follows: using the law of cosines for the collision triangle and solving the corresponding quadratic equation for the distance which ball 1 travels to the collision point, one obtains the time that elapses from the original coordinates to the collision as
+
+
+$$t=\frac{d\cos(Y_{x,y}-Y_{v})\pm \sqrt{(r1+r2)^{2}}-2d.\sin(Y_{x,y}-Y_{v})}{\sqrt{(v_{x,1}-v_{x,2})^{2}+(v_{y,1}-v_{y})^{2}}}.........(17)$$
 
 
