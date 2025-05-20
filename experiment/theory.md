@@ -76,4 +76,41 @@ This will give a value for $\alpha$ as long as the absolute value of $d.sin (Y_{
 
 $$t=\frac{d\cos(Y_{x,y}-Y_{v})\pm \sqrt{(r1+r2)^{2}}-2d.\sin(Y_{x,y}-Y_{v})}{\sqrt{(v_{x,1}-v_{x,2})^{2}+(v_{y,1}-v_{y})^{2}}}.........(17)$$
 
+Before the first square root, the minus sign holds if $\cos(Y_{x,y} - Y_{v}) > 0$ and the plus sign otherwise. Note again that a valid solution requires $d \cdot \sin(Y_{x,y} - Y_{v})| \le (r_1 + r_2)$ (otherwise the balls would not collide). The new coordinates (the position of the center of the balls at the moment of collision) are therefore;
+
+$$x_{1}'=x_{1}+v_{x,1}.t...................(18)$$
+
+$$y_{1}'=y_{1}+v_{y,1}.t...................(19)$$
+
+$$x_{2}'=x_{2}+v_{x,2}.t...................(20)$$
+
+$$y_{2}'=y_{2}+v_{y,2}.t...................(21)$$
+
+### Generalization to Inelastic Collisions:
+
+The generalization of the above formulae to inelastic collisions is ultimately simple: we just have to refer the velocity components (Eq.(10)-(13)) to the center of mass reference frame, apply the restitution coefficient to these, and add again the center of mass ($cm$) velocity to return to the lab frame, i.e. with,
+
+$$v_{x,cm}=\frac{(m1.v_{x,1}+m2.v_{x,2})}{(m1+m2)}.............(22)$$
+
+$$v_{y,cm}=\frac{(m1.v_{y,1}+m2.v_{y,2})}{(m1+m2)}...............(23)$$
+
+We have, 
+
+$$v_{x,1}''=(v_{x,1}'-v_{x,cm}).R+v_{x,cm}...............(24)$$
+
+$$v_{y,1}''=(v_{y,1}'-v_{y,cm}).R+v_{y,cm}...............(25)$$
+
+
+$$v_{x,2}''=(v_{x,2}'-v_{x,cm}).R+v_{x,cm}................(26)$$
+
+$$v_{y,2}''=(v_{y,2}'-v_{y,cm}).R+v_{y,cm}..............(27)$$
+
+where R is the restitution coefficient (=1 for a perfectly elastic collision; =0 for a perfectly inelastic collision (balls stick together after the collision).
+
+### Applications:
+1. It is used for mobile networking.
+2. Billard balls.
+3. Cryptosystems.
+4. Collision detection.
+ 
 
