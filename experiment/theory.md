@@ -42,16 +42,19 @@ $$Yv=\arctan \left[ \frac{(v_{y,1}-v_{y,2})}{(v_{x,1}-v_{x,2})} \right].........
 and the impact angle $\theta$ (see below); one can finally write
 
 $$\Delta v_{x,2'}=\frac{2[v_{x,1}-v_{y,2}+a.(v_{y,1}-v_{y,2})]}{[(1+a2)(1+\frac{m_{2}}{m_{1}})]}......(8)$$
+
 where
 
-$$a=\tan (\theta)=\tan (Yv+a)..................(9)$$
+$$a=\tan (\theta)=\tan (Yv+\alpha)..................(9)$$
 
 The 'impact angle' $\theta$ can vary between $-90^{0}$ and $+90^{0}$ (or $\frac{-\pi}{2}$ and $\frac{\pi}{2}$ when using radians) ($0^{0}$ corresponds to a head-on- and the extreme values to a grazing collision). (in most treatments of collision problems, the center-of -mass scattering angle $\theta$ is used, which relates to $\theta$ through $\theta=(\pi-\theta)/2; however, as $\theta$ is independent of the reference frame, it is a much better choice here). The actual value of$\theta$ depends on the exact coordinates of the particles, so if the latter are not known, one has to treat $\theta$ as a free parameter and generate it for instance through a random number generator. (otherwise see below for the determination of $\theta$). From Eqs.(2),(4),(5),(8),and (9) the velocity components after the collision are therefore:
 
 $$v_{x,2'}=v_{x,2}+\Delta v_{x,2'}...............(10)$$
 $$v_{y,2'}=v_{y,2}+a.\Delta v_{x,2'}...............(11)$$
 $$v_{x,1'}=v_{x,1}-\frac{m_{2}}{m_{1}}\Delta v_{x,2'}...............(12)$$
+$$v_{y,1'}=v_{y,1}-a.\frac{m_{2}}{m_{1}}\Delta v_{x,2'}...............(13)$$
 
+The 'impact angle' $\alpha$ in Eq.(9) can be determined from the collision geometry as shown in the illustration below:
 
 
 
