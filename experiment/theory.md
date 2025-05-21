@@ -33,7 +33,7 @@ $$v_{y,1'}=v_{y,1}-\frac{m_{2}}{m_{1}}\Delta v_{x,2'}\tan (\theta)............(5
 
 Inserting (4) and (5) into Eq.(3) results in a quadratic equation for $\Delta v_{x,2'}$ which (after some lengthy but straightforward algebraic manipulations) yields the solution:
 
-$$\Delta v_{x,2'}=\frac{2[v_{x,1}+\tan (\theta)v_{y,1}]}{[(1+\tan 2\theta])(1+\frac{m_{2}}{m_{1}})]}........(6)$$
+$$\Delta v_{x,2'}=\frac{2[v_{x,1}+\tan (\theta)v_{y,1}]}{[(1+\tan^{2}\theta])(1+\frac{m_{2}}{m_{1}})]}........(6)$$
 
 Refering now the initial velocities explicitly to ball 2 and noting that the angle $\theta$¸ is the sum of the relative velocity angle between ball 1 and 2
 
@@ -41,7 +41,7 @@ $$Yv=\arctan \left[ \frac{(v_{y,1}-v_{y,2})}{(v_{x,1}-v_{x,2})} \right].........
 
 and the impact angle $\theta$ (see below); one can finally write
 
-$$\Delta v_{x,2'}=\frac{2[v_{x,1}-v_{y,2}+a.(v_{y,1}-v_{y,2})]}{[(1+a2)(1+\frac{m_{2}}{m_{1}})]}......(8)$$
+$$\Delta v_{x,2'}=\frac{2[v_{x,1}-v_{y,2}+a.(v_{y,1}-v_{y,2})]}{[(1+a^{2})(1+\frac{m_{2}}{m_{1}})]}......(8)$$
 
 where
 
@@ -60,9 +60,9 @@ The 'impact angle' $\alpha$ in Eq.(9) can be determined from the collision geome
 
 Geometry of 2D collision
 
-If the coordinates of the balls (with radius r1 and r2) are x1,y1 and x2,y2,$\alpha$ is given by
+If the coordinates of the balls (with radius $r_{1}$ and $r_{2}$ ) are x1,y1 and x2,y2, $\alpha$ is given by
 
-$$\alpha=\arcsin\left[ \frac{d.\sin(Y_{x,y}-Y_{v})}{(r1+r2)}\right]................(14)$$
+$$\alpha=\arcsin\left[ \frac{d.\sin(Y_{x,y}-Y_{v})}{(r_{1}+r_{2})}\right]................(14)$$
 
 Where
 
@@ -71,10 +71,10 @@ $$d=\sqrt{(x2-x1)^{2}+(y2-y1)^{2}}.............(15)$$
 $$Y_{x,y}=\arcsin\left[ \frac{(y2-y1)}{(x2-x1)} \right].................(16)$$
 
 
-This will give a value for $\alpha$ as long as the absolute value of $d.sin (Y_{x,y}-Y_{v})\le (r1+r2)$ (otherwise the arcsin- function above is not defined, in which case the balls would not collide anyway). Note that one also has to exclude the case where $Y_{x,y}$ and $Y_{v}$ differ by more then $\pi/2$ and less than $1.5*\pi$ as then the balls would move away from each other. If one is tracking the balls for further collisions, it is also necessary to update the coordinates in addition to the velocities. This is achieved as follows: using the law of cosines for the collision triangle and solving the corresponding quadratic equation for the distance which ball 1 travels to the collision point, one obtains the time that elapses from the original coordinates to the collision as
+This will give a value for $\alpha$ as long as the absolute value of $d.sin (Y_{x,y}-Y_{v})\le (r_{1}+r_{2})$ (otherwise the arcsin- function above is not defined, in which case the balls would not collide anyway). Note that one also has to exclude the case where $Y_{x,y}$ and $Y_{v}$ differ by more then $\pi/2$ and less than $1.5*\pi$ as then the balls would move away from each other. If one is tracking the balls for further collisions, it is also necessary to update the coordinates in addition to the velocities. This is achieved as follows: using the law of cosines for the collision triangle and solving the corresponding quadratic equation for the distance which ball 1 travels to the collision point, one obtains the time that elapses from the original coordinates to the collision as
 
 
-$$t=\frac{d\cos(Y_{x,y}-Y_{v})\pm \sqrt{(r1+r2)^{2}}-2d.\sin(Y_{x,y}-Y_{v})}{\sqrt{(v_{x,1}-v_{x,2})^{2}+(v_{y,1}-v_{y})^{2}}}.........(17)$$
+$$t=\frac{d\cdot \cos(Y_{x,y}-Y_{v})\pm \sqrt{(r_{1}+r_{2})^{2}-[d.\sin(Y_{x,y}-Y_{v})]^{2}}}{\sqrt{(v_{x,1}-v_{x,2})^{2}+(v_{y,1}-v_{y})^{2}}}.........(17)$$
 
 Before the first square root, the minus sign holds if $\cos(Y_{x,y} - Y_{v}) > 0$ and the plus sign otherwise. Note again that a valid solution requires $d \cdot \sin(Y_{x,y} - Y_{v})| \le (r_1 + r_2)$ (otherwise the balls would not collide). The new coordinates (the position of the center of the balls at the moment of collision) are therefore;
 
